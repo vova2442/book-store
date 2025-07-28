@@ -23,10 +23,10 @@
 
 ## Установка и запуск
 
-1. Для запуска проекта необходимо установить: Open Server 6,  Composer, Git, PHP версии 8.2 или выше, MySQL, Node.js и npm.
-2. Запустить консоль Open Server и перейти в папку проекта: `cd C:\OSPanel\home\`
+1. Для запуска проекта рекомендуется установить: Open Server 6,  Composer, Git, PHP версии 8.2 или выше, MySQL, Node.js и npm.
+2. Запустить консоль Open Server и перейти в папку: `cd C:\OSPanel\home\`
 3. Склонировать репозиторий: `git clone https://github.com/vova2442/book-store`
-4. Установить PHP-зависимости `composer install`
+4. Перейти в папку проекта `cd C:\OSPanel\home\book-store` и  в установить PHP-зависимости `composer install`
 5. Создать файл окружения .env: `copy .env.example .env` (Для macOS / Linux: `cp .env.example .env`)
 6. Сгенерировать ключ приложения: `php artisan key:generate`
 7. Создать пустую базу данных в phpmyadmine (с любым именем) с кодировкой `utf8mb4_unicode_ci`.
@@ -34,8 +34,9 @@
 9. Выполнить миграции и наполнить базу данных: `php artisan migrate --seed`
 10. Установить JS-зависимости: `npm install`
 11. Собрать фронтенд-ресурсы: `npm run build`
+12. Перезапустить Open Server
 
-После выполнения последней команды приложение будет доступно по адресу: http://book-store/
+После выполнения последней команды приложение будет доступно по адресу: http://book-store/ или через меню Open Server
 
 ## Доступ к административной панели
 
@@ -43,3 +44,5 @@
 - Email: `userBookstore@com`
 - Email: `adminBookstore@com`
 - Пароль: `password`
+
+
