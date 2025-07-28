@@ -1,19 +1,4 @@
-1. Склонировать репозиторий: git clone https://github.com/vova2442/Semester_4_CaseTask_4
-2. Перейти в папку проекта: cd Semester_4_CaseTask_4
-3. Установить PHP-зависимости: composer install
-4. Скопировать файл окружения: copy .env.example .env
-5. Сгенерировать ключ приложения: php artisan key:generate
-6. Настроить подключение к вашей БД в файле .env (создать базу данных "Semester-4_Case-task-4" с кодировкой utf8mb4_unicode_ci).
-7. Открыть файл .env и приписать свои данные для подключения к БД (обычно это: DB_CONNECTION=mysql, DB_HOST=MySQL-8.4(или ваша версия mysql), DB_PORT=3306, DB_DATABASE=Semester-4_Case-task-4, DB_USERNAME=root, DB_PASSWORD=) .
-8. Выполнить миграции и наполнить БД тестовыми данными: php artisan migrate:fresh --seed
-9. Установить JS-зависимости: npm install
-10. Собрать фронтенд: npm run dev (оставить консоль работать)
-11. Настроить локальный сервер (например, Open Server) на папку /public проекта.
-
-
-
-
-# Веб-приложение "Книжный магазин" (Bookstore)
+# Web-версия книжного магазина (book-store)
 
 ## Основной функционал
 
