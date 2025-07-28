@@ -1,4 +1,4 @@
-# Web-версия книжного магазина (book-store)
+# Web-версия книжного магазина (Кейс-задача № 4)
 
 ## Основной функционал
 
@@ -16,29 +16,30 @@
 
 ## Технологический стек
 
-*   **Бэкенд: PHP 8.4, Laravel 12
-*   **Фронтенд: HTML5, Blade, Tailwind CSS, Alpine.js
-*   **База данных: MySQL 8.4
-*   **Серверное окружение: Open Server / Любой веб-сервер с поддержкой PHP и MySQL
+- Бэкенд: PHP 8.4, Laravel 12
+- Фронтенд: HTML5, Blade, Tailwind CSS, Alpine.js
+- База данных: MySQL 8.4
+- Серверное окружение: Open Server / Любой веб-сервер с поддержкой PHP и MySQL
 
 ## Установка и запуск
 
-1. Для запуска проекта установить: Open Server,  Composer, Git, PHP версии 8.2 или выше, MySQL, Node.js и npm.
-2. Склонировать репозиторий: `git clone https://github.com/vova2442/book-store`
-3. Запустить Open Server и перейти в папку проекта: `cd book-store`
+1. Для запуска проекта необходимо установить: Open Server 6,  Composer, Git, PHP версии 8.2 или выше, MySQL, Node.js и npm.
+2. Запустить консоль Open Server и перейти в папку проекта: `cd C:\OSPanel\home\`
+3. Склонировать репозиторий: `git clone https://github.com/vova2442/book-store`
 4. Установить PHP-зависимости `composer install`
 5. Создать файл окружения .env: `copy .env.example .env` (Для macOS / Linux: `cp .env.example .env`)
 6. Сгенерировать ключ приложения: `php artisan key:generate`
-7. Создать пустую базу данных в phpmyadmine (с любым именем).
-8. Открыйть файл .env и указ ваши данные для подключения к БД: `DB_CONNECTION=mysql (имя БД), DB_HOST=MySQL-8.4 (имя сервера), DB_PORT=3306, DB_DATABASE=bookstore (имя БД), DB_USERNAME=root, DB_PASSWORD= (можно оставить пустым)`
+7. Создать пустую базу данных в phpmyadmine (с любым именем) с кодировкой `utf8mb4_unicode_ci`.
+8. Открыйть файл .env и указать данные для подключения к БД: `DB_CONNECTION=mysql (имя БД), DB_HOST=MySQL-8.4 (имя сервера), DB_PORT=3306, DB_DATABASE=bookstore (имя БД), DB_USERNAME=root, DB_PASSWORD= (можно оставить пустым)`
 9. Выполнить миграции и наполнить базу данных: `php artisan migrate --seed`
 10. Установить JS-зависимости: `npm install`
 11. Собрать фронтенд-ресурсы: `npm run build`
-12. Запустить локальный сервер: `php artisan serve`
 
-После выполнения последней команды приложение будет доступно по адресу: http://book-store
+После выполнения последней команды приложение будет доступно по адресу: http://book-store/
 
 ## Доступ к административной панели
 
-Email: admin@bookstore.com
-Пароль: password
+После выполнения шага 6 будут созданы два пользователя:
+- Email: `userBookstore@com`
+- Email: `adminBookstore@com`
+- Пароль: `password`
