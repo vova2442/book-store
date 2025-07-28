@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB; // Важно добавить этот импорт для работы с БД
+use Illuminate\Support\Facades\DB;
 
 class BookSeeder extends Seeder
 {
@@ -12,10 +12,10 @@ class BookSeeder extends Seeder
      */
     public function run(): void
     {
-        // Очищаем таблицу перед заполнением, чтобы избежать дубликатов при повторном запуске
-        DB::table('books')->truncate();
-
+        // Команду truncate отсюда мы убрали!
+        
         DB::table('books')->insert([
+            // ... здесь идет массив со всеми твоими книгами, он не меняется ...
             [
                 'title' => 'Дюна',
                 'author' => 'Фрэнк Герберт',
@@ -65,7 +65,7 @@ class BookSeeder extends Seeder
                 'price' => 900.00,
                 'status' => 'available',
                 'created_at' => now(), 'updated_at' => now()
-            ],
+            ]
         ]);
     }
 }
